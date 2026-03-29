@@ -1,5 +1,10 @@
 # 🔍 IT Network Traffic — Anomaly Detection
 
+## 📊 Live Dashboard
+👉 [Click here to view the interactive Anomaly Detection Dashboard](https://arpitasarkardata.github.io/It-network-anomaly-detection/anomaly_dashboard.html)
+
+---
+
 ## 📌 Project Overview
 
 IT companies managing large infrastructure face a critical challenge — detecting unusual 
@@ -56,7 +61,7 @@ capture data — from raw CSV ingestion to an interactive dashboard flagging sus
 - Features used: Time, Packet No., Length, Source, Destination, Protocol
 
 ### 4. Dashboard & Export
-- Interactive 4-panel Plotly dashboard saved as HTML
+- Interactive 4-panel Plotly dashboard — live link above
 - Results exported to Excel with 3 sheets: All Traffic, Anomalies Only, Summary
 
 ---
@@ -98,7 +103,7 @@ This project directly maps to real IT operations work:
 
 1. Clone this repository
 ```
-git clone https://github.com/arpitasarkardata/it-network-anomaly-detection.git
+git clone https://github.com/arpitasarkardata/It-network-anomaly-detection.git
 ```
 
 2. Install required libraries
@@ -106,19 +111,25 @@ git clone https://github.com/arpitasarkardata/it-network-anomaly-detection.git
 pip install pandas numpy matplotlib seaborn scikit-learn plotly openpyxl
 ```
 
-3. Place `Midterm_53_group.csv` in the same folder
+3. Download the dataset from Kaggle and place `Midterm_53_group.csv` in the same folder
+   👉 [Network Traffic Dataset on Kaggle](https://www.kaggle.com/datasets/ravikumargattu/network-traffic-dataset)
 
-4. Run **Kernel → Restart & Run All** in Jupyter Notebook
+4. Run all cells in `anomaly_detection.ipynb`
 
 ---
 
 ## 📁 Repository Structure
 ```
-it-network-anomaly-detection/
-    anomaly_detection.ipynb     ← Full analysis notebook
-    anomaly_dashboard.html      ← Interactive Plotly dashboard
-    anomaly_results.xlsx        ← Excel report (3 sheets)
-    README.md                   ← This file
+It-network-anomaly-detection/
+    anomaly_detection.ipynb          ← Full analysis notebook
+    anomaly_dashboard.html           ← Interactive Plotly dashboard
+    anomaly_results.xlsx             ← Excel report (3 sheets)
+    anomaly_detection_ppt.pptx       ← Project presentation
+    protocol_distribution.png        ← EDA chart
+    packet_length_over_time.png      ← EDA chart
+    length_distribution.png          ← EDA chart
+    top_sources.png                  ← EDA chart
+    README.md                        ← This file
 ```
 
 ---
